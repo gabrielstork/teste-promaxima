@@ -1,0 +1,44 @@
+.font-size-sm{
+    font-size: 12px;
+}
+
+.font-size-md{
+    font-size: 14px;
+}
+
+.font-size-lg{
+    font-size: 16px;
+}
+
+.width-sm{
+    width: 35px;
+}
+
+.custom-tipo{
+    max-width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.custom-contribuinte{
+    max-width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.custom-input{
+    background-color: rgb(44, 48, 52);
+}
+
+.custom-input:focus{
+    background-color: rgb(44, 48, 52);
+}
+
+fieldset #tipo-input, 
+fieldset #valor-unitario-input,
+fieldset #valor-ultima-venda-input,
+fieldset #tempo-ultima-venda-input,
+fieldset #contribuinte-input,
+fieldset #codigo-input{
+    background-color: rgba(252, 128, 128, 0.6)
+}

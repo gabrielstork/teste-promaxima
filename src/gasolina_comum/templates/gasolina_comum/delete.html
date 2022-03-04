@@ -1,0 +1,51 @@
+{% extends 'gasolina_comum/base.html' %}
+
+{% block title %}Deletar{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container d-flex justify-content-between aling-items-center mt-2">
+        <h4 class="text-light">Deletar</h4>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset disabled="disabled">
+                <div class="mb-3">
+                    <label for="tipo-input" class="form-label text-light font-size-sm">Tipo</label>
+                    {{ delete_form.tipo }}
+                </div>
+                <div class="mb-3">
+                    <label for="valor-unitario-input" class="form-label text-light font-size-sm">Valor Unitário</label>
+                    {{ delete_form.valor_unitario }}
+                </div>
+                <div class="mb-3">
+                    <label for="valor-ultima-venda-input" class="form-label text-light font-size-sm">Valor Última Venda</label>
+                    {{ delete_form.valor_ultima_venda }}
+                </div>
+                <div class="mb-3">
+                    <label for="tempo-ultima-venda-input" class="form-label text-light font-size-sm">Tempo Última Venda</label>
+                    {{ delete_form.tempo_ultima_venda }}
+                </div>
+                <div class="mb-3">
+                    <label for="contribuinte-input" class="form-label text-light font-size-sm">Contribuinte</label>
+                    {{ delete_form.contribuinte }}
+                </div>
+                <div class="mb-3">
+                    <label for="codigo-input" class="form-label text-light font-size-sm">Código</label>
+                    {{ delete_form.codigo }}
+                </div>
+            </fieldset>
+            <div class="d-flex justify-content-end align-items-center">
+                <a href="{{ previous_link_value }}">
+                    <button type="button" class="btn btn-secondary btn-sm px-5 me-2 shadow-none">Cancelar</button>
+                </a>
+                <button type="submit" class="btn btn-danger btn-sm px-5 shadow-none">Deletar</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
