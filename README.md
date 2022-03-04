@@ -4,7 +4,7 @@
 https://user-images.githubusercontent.com/86558706/156783006-7c6e2c08-b026-4043-9ae7-35d8441f7a84.mp4
 
 
-Foi utilizado o `BeautifulSoup` para raspagem de dados no [site requisitado](https://economizaalagoas.sefaz.al.gov.br/exibicaoPrecoCombustivel.htm?codTipoCombustivel=1). E foi feita a aplicação `Django` + `SQLite`, que permite **adicionar**, **editar**,**deletar** e **atualizar** (todos os dados, menos os criados manualmente pelo usuário, são substituídos pelos novos dados que serão obtidos na raspagem) os itens. Além de recursos extras como a **ordenação** dos dados na lista de acordo com um campo e a opção de selecionar a quantidade de itens exibidos por **página**.
+Foi utilizado o `BeautifulSoup` para raspagem de dados no [site requisitado](https://economizaalagoas.sefaz.al.gov.br/exibicaoPrecoCombustivel.htm?codTipoCombustivel=1). E foi feita a aplicação `Django` + `SQLite`, que permite **adicionar**, **editar**, **deletar** e **atualizar** (todos os dados, menos os criados manualmente pelo usuário, são substituídos pelos novos dados que serão obtidos na nova raspagem) os itens. Além de recursos extras como a **ordenação** dos dados na lista de acordo com um campo e a opção de selecionar a quantidade de itens exibidos por **página**.
 
 ## Execução
 
